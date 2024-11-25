@@ -41,7 +41,7 @@ DeformableMamba
 ├── ckpts
 │   ├── pretrained
 │   │   ├── vssm-small.pt
-│   │   ├── vssm-tiny.p
+│   │   ├── vssm-tiny.pt
 │   ├── trained
 ├── configs
 ├── data
