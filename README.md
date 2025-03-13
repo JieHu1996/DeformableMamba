@@ -6,7 +6,7 @@
 </p>
   
 ![](figs/fig1.png)
-![](figs/fig4.png)
+![](figs/fig3.png)
 
 
 ## Updates
