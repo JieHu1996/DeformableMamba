@@ -1,7 +1,7 @@
 #!/bin/bash
 source ~/.bashrc
-conda activate DMamba
-cd /home/hk-project-cvhciass/tj3409/DeformableMamba
+conda activate DMamba   # activate your environment
+cd /home/DeformableMamba  # cd to your project directory
 
 
 CONFIG=$1

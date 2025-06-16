@@ -3,13 +3,12 @@
 #################### Python.gitignore ####################
 
 # config
-ckpts
-data
+# ckpts
+# data
 tmp
 work_dirs
 work_results_important
 .dist_test
-
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -498,7 +497,8 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*

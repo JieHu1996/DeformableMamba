@@ -11,10 +11,8 @@ import os.path as osp
 from mmengine.config import Config, DictAction
 from mmengine.logging import print_log
 from mmengine.runner import Runner
-from mmengine.dist import is_main_process
 
 from mmseg.registry import RUNNERS
-from fvcore.nn import FlopCountAnalysis, flop_count_table
 
 
 def parse_args():
@@ -101,33 +99,6 @@ def main():
         # build customized runner from the registry
         # if 'runner_type' is set in the cfg
         runner = RUNNERS.build(cfg)
-
-    model = runner.model
-    if is_main_process():
-    #     # flops and params
-    #     bs = 1
-    #     input = torch.randn(bs, 3, 512, 512).cuda()
-    #     flops = flop_count_table(FlopCountAnalysis(model, input))
-    #     # print_log(f'Input Size: 512 x 512 ', logger='current', level=logging.INFO)
-    #     print_log('\n' + f'flops count using batch size: {bs}', logger='current', level=logging.INFO)
-    #     print_log('\n' + flops, logger='current', level=logging.INFO)
-        bs = 1
-        input = torch.randn(bs, 3, 512, 1024).cuda()
-        model.eval()
-        t_all = []
-        with torch.no_grad():
-            for i in range(100):
-                t1 = time.time()
-                y = model(input)
-                t2 = time.time()
-                t_all.append(t2 - t1)
-        print('Average time: ', np.mean(t_all))
-        print('Average FPS: ', 1 / np.mean(t_all))
-        print('Max time: ', np.max(t_all))
-        print('Min time: ', np.min(t_all))
-        print('Max FPS: ', 1 / np.min(t_all))
-        print('Min FPS: ', 1 / np.max(t_all))
-
 
     # start training
     runner.train()
