@@ -1,11 +1,10 @@
 # Deformable Mamba for Wide Field of View Segmentation
-<<<<<<< HEAD
+
 ![](figs/fig1.png)
 ![](figs/fig4.png)
 
 
 ## Update
-=======
 
 <p>
 <a href="https://arxiv.org/pdf/2411.16481">
@@ -17,9 +16,8 @@
 
 
 ## Updates
->>>>>>> origin/main
 
-- [ ] Code is to be released.
+- [x] [06/2025], Code is released.
 - [x] [11/2024], Repository initialize.
 
 ## Prerequisites
@@ -34,11 +32,7 @@ conda activate DMamba
 cd DeformableMamba
 pip install torch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 --index-url https://download.pytorch.org/whl/cu121
 pip install -r requirements.txt
-<<<<<<< HEAD
-pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2.1/index.html
-=======
 pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu121/torch2.1/index.html
->>>>>>> origin/main
 pip install mmsegmentation==1.2.2
 cd mmseg/models/utils/kernels/selective_scan && pip install .
 ```
@@ -124,13 +118,13 @@ Please follow this command:
 
 `bash tools/dist_train.sh <CONFIG PATH> <GPU NUM>`
 
-For example, train the model on SynPASS dataset with 4 GPUs:
+For example, train the model on WoodScape dataset with 4 GPUs:
 
-`bash tools/dist_train.sh configs/deformableMamba-mini/deformableMamba-m_synpass_160k.py 4`
+`bash tools/dist_train.sh configs/deformableMamba-mini/deformableMamba-m_woodscape_160k.py 4`
 
 ## Test
 
-Download the trained models from GoogleDrive and save in ./ckpts as:
+Download the trained models from GoogleDrive and save in ./ckpts/trained as:
 
 ```
 ├── trained
@@ -157,19 +151,19 @@ Download the trained models from GoogleDrive and save in ./ckpts as:
 
 Please follow this command:
 
-<<<<<<< HEAD
+
 `bash tools/dist_train.sh <CONFIG PATH> <CHECKPOINT PATH> <GPU NUM>`
 
-For example, test the model on SynPASS dataset with 4 GPUs:
+For example, test the model on WoodScape dataset with 4 GPUs:
 
-`bash tools/dist_train.sh configs/deformableMamba-mini/deformableMamba-m_synpass_160k.py ckpts/trained/synpass/deformableMamba-mini_synpass_160k.pth 4`
-=======
+`bash tools/dist_train.sh configs/deformableMamba-mini/deformableMamba-m_woodscape_160k.py ckpts/trained/synpass/deformableMamba-mini_ws.pth 4`
+
 `bash tools/dist_test.sh <CONFIG PATH> <CHECKPOINT PATH> <GPU NUM>`
 
-For example, test the model on SynPASS dataset with 4 GPUs:
+For example, test the model on WoodScape dataset with 4 GPUs:
 
-`bash tools/dist_test.sh configs/deformableMamba-mini/deformableMamba-m_synpass_160k.py ckpts/trained/synpass/deformableMamba-mini_synpass_160k.pth 4`
->>>>>>> origin/main
+`bash tools/dist_test.sh configs/deformableMamba-mini/deformableMamba-m_woodscape_160k.py ckpts/trained/synpass/deformableMamba-mini_ws.pth 4`
+
 
 ## References
 We appreciate the previous open-source works.
@@ -180,8 +174,8 @@ We appreciate the previous open-source works.
 ## License
 
 This repository is under the Apache-2.0 license. For commercial use, please contact with the authors.
-<<<<<<< HEAD
-=======
+
+
 
 
 
