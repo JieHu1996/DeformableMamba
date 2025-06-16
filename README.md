@@ -124,7 +124,7 @@ For example, train the model on WoodScape dataset with 4 GPUs:
 
 ## Test
 
-Download the trained models from GoogleDrive and save in ./ckpts/trained as:
+Download the trained models from [GoogleDrive](https://drive.google.com/drive/folders/1rW8M66tEdGAw_CCI2sYaM19aQFQSojHq?usp=sharing) and save in ./ckpts/trained as:
 
 ```
 ├── trained
