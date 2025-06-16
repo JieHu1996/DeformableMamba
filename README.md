@@ -152,12 +152,6 @@ Download the trained models from GoogleDrive and save in ./ckpts/trained as:
 Please follow this command:
 
 
-`bash tools/dist_train.sh <CONFIG PATH> <CHECKPOINT PATH> <GPU NUM>`
-
-For example, test the model on WoodScape dataset with 4 GPUs:
-
-`bash tools/dist_train.sh configs/deformableMamba-mini/deformableMamba-m_woodscape_160k.py ckpts/trained/synpass/deformableMamba-mini_ws.pth 4`
-
 `bash tools/dist_test.sh <CONFIG PATH> <CHECKPOINT PATH> <GPU NUM>`
 
 For example, test the model on WoodScape dataset with 4 GPUs:
