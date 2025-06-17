@@ -1,11 +1,5 @@
 # Deformable Mamba for Wide Field of View Segmentation
 
-![](figs/fig1.png)
-![](figs/fig4.png)
-
-
-## Update
-
 <p>
 <a href="https://arxiv.org/pdf/2411.16481">
     <img src="https://img.shields.io/badge/PDF-arXiv-brightgreen" /></a>
