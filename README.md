@@ -42,7 +42,7 @@ cd mmseg/models/utils/kernels/selective_scan && pip install .
 - [COCO-Stuff 10K](https://github.com/nightrome/cocostuff10k)
 - [MP3DPANO](https://github.com/jamycheung/360BEV)
 - [Stanford2D3D](https://arxiv.org/abs/1702.01105)
-- [SynPASS](https://drive.google.com/file/d/1u-5J13CD6MXpWB53apB-L6kZ3hK1JR77/view?usp=sharing)
+- [SynPASS](https://github.com/jamycheung/Trans4PASS)
 - [SynWoodScape](https://github.com/valeoai/WoodScape/issues/94)
 - [WoodScape](https://github.com/valeoai/WoodScape)
 
