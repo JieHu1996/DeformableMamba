@@ -168,11 +168,3 @@ We appreciate the previous open-source works.
 ## License
 
 This repository is under the Apache-2.0 license. For commercial use, please contact with the authors.
-
-
-
-
-
-
-
->>>>>>> origin/main
